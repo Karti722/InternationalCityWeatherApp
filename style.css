@@ -1,0 +1,82 @@
+/* Sets the default settings for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222; 
+/* Uses website url from unsplash to generate random background images for our website */
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    font-size: 120%;
+    font-weight: 400;
+}
+/* This is for the card that displays the corresponding weather information */
+.card {
+    background: #010924d0;
+    color: rgba(247, 247, 248, 0.664);
+    padding: 3em;
+    padding-top: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1.5em;
+}
+/* For the contents in the search bar, where the user types in the city name */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1.temp {
+    margin: 10%;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 50px;
+    outline: none;
+    background: #1a83755e;
+    color: lightgoldenrodyellow;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 95%;
+    width: 105%;
+}
+
+button:hover {
+    background: rgba(111, 200, 30, 0.528);
+}
+/* Loading class */
+.weather.loading {
+    visibility: visible;
+    max-height: 15px;
+    position: relative;
+}
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 20px;
+}
+.country-flag {
+    height: 40px;
+    margin-left: 60%;
+    margin: 0%;
+    margin-top: 50px;
+    padding: 0%;
+    align-self: center;
+}
